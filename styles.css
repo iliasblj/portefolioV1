@@ -1,4 +1,3 @@
-/* Variables globales */
 :root {
     --primary-color: #2563eb;
     --secondary-color: #1e40af;
@@ -462,9 +461,20 @@ body::after {
     margin-bottom: 0;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contact-form {
@@ -476,10 +486,14 @@ body::after {
     border-radius: 15px;
     border: 1px solid rgba(37, 99, 235, 0.3);
     backdrop-filter: blur(10px);
+    align-items: center;
+    width: 100%;
 }
 
 #contact-form input,
 #contact-form textarea {
+    width: 100%;
+    max-width: 400px;
     padding: 1rem;
     border: 1px solid rgba(37, 99, 235, 0.3);
     border-radius: 8px;
@@ -494,6 +508,7 @@ body::after {
 }
 
 #contact-form button {
+    align-self: center;
     background: var(--primary-color);
     color: white;
     padding: 1rem 2rem;

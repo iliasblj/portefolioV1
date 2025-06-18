@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilias Belhaj</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Ilias Belhaj</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="container">
+            <div class="welcome-content">
+                <h1>Bienvenue sur mon portfolio.</h1>
+                <p>Vous y découvrirez mes projets, mon parcours et mes compétences.</p>
+                <p>Bonne visite !</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>👋 Bonjour, je suis Belhaj Ilias, j'ai 22 ans, et le monde du numérique me fascine dans ses moindres recoins.</p>
+                    <p>Après un bac STMG, j'ai naturellement poursuivi mes études en BTS MCO. Mais très vite, je me suis rendu compte que ce n'était pas ma voie. Passionné par le numérique, je me suis réorienté vers le digital — un domaine dans lequel je m'épanouis pleinement aujourd'hui.</p>
+                    <p>En ce moment, je fais un Bachelor Digital à My Digital School et je me spécialise autour de : Développement web, design UX/UI, marketing… pour donner vie à des idées fraîches et utiles.</p>
+                    <p>💼 Au sein de l'équipe de La Ja Breal, je suis en stage dans ce club de Football et je m'occupe des tâches principales : rédiger des posts, de la création de contenus, une vraie chance qui me permet d'apprendre sur le terrain et de tester chaque théorie.</p>
+                    <p>🌟 Curieux, créatif, un brin minutieux, je cherche à marier réflexion et esthétique pour livrer des expériences digitales qui marchent et qui plaisent. Quand je m'éloigne des écrans, je pioche des références dans le cinéma, l'art, le sport, les voyages, et ça alimente ma manière de voir le web.</p>
+                    <p>📌 Mon mot d'ordre ? Découvrir, jouer, évoluer - et sourire à chaque étape ! 👉 Tu aimerais en savoir plus ? Je t'invite à parcourir mes projets ou à me parler directement, je réponds avec plaisir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Mes Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="adobe-logos">
+                    <i class="fab fa-adobe"></i>
+                    <i class="fas fa-image"></i>
+                    <i class="fas fa-paint-brush"></i>
+                    <i class="fas fa-file-alt"></i>
+                    <i class="fas fa-video"></i>
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3>Suite Adobe</h3>
+                <p>Photoshop, Illustrator, InDesign, Premiere Pro, After Effects</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-figma"></i>
+                <h3>Figma</h3>
+                <p>Design UI/UX, Prototypage, Collaboration</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-wordpress"></i>
+                <h3>WordPress</h3>
+                <p>Création de sites web, Gestion de contenu</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-palette"></i>
+                <h3>Canva</h3>
+                <p>Design graphique, Création de visuels</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projets Professionnels</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-gallery">
+                        <img src="./images/psg ldc finale.jpg" alt="PSG Champions League Final" class="gallery-item" onclick="openModal('modal1')" data-description="J'ai effectué cette affiche pour l'occasion d'une soirée au club pour la finale de la Ligue des Champions. Cette création a permis de promouvoir l'événement et de créer une ambiance festive autour du match.">
+                        <img src="./images/affiche match nation league.jpg" alt="PSG Match" class="gallery-item" onclick="openModal('modal2')" data-description="Création d'une affiche pour un match important du club. Le design met en avant l'ambiance et l'excitation du match, avec une mise en page dynamique qui capture l'essence du football.">
+                        <img src="./images/Green and Black Football Sports Graphic Instagram Post.jpg" alt="PSG Stadium" class="gallery-item" onclick="openModal('modal3')" data-description="Publication Instagram créée pour promouvoir un événement du club. Le design moderne et dynamique attire l'attention des followers et encourage l'engagement sur les réseaux sociaux.">
+                    </div>
+                    <h3>La Ja Breal</h3>
+                    <p>Stage en marketing digital et création de contenu pour un club de football.</p>
+                    <div class="project-tags">
+                        <span>Marketing Digital</span>
+                        <span>Création de Contenu</span>
+                        <span>Réseaux Sociaux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal1')">&times;</span>
+            <img src="./images/psg ldc finale.jpg" alt="PSG Champions League Final" class="modal-image">
+            <div class="modal-details">
+                <h3>Finale de la Ligue des Champions</h3>
+                <p>Création d'une affiche pour l'occasion d'une soirée organisée au club pour la finale de la Ligue des Champions. Cette affiche a été conçue pour promouvoir l'événement et créer une ambiance festive autour du match.</p>
+                <p>Techniques utilisées : Photoshop, Illustrator</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal2')">&times;</span>
+            <img src="./images/affiche match nation league.jpg" alt="PSG Match" class="modal-image">
+            <div class="modal-details">
+                <h3>Jour de Match</h3>
+                <p>Affiche créée pour un match important, mettant en avant l'ambiance et l'excitation du match. Le design capture l'essence du football et l'énergie des supporters.</p>
+                <p>Techniques utilisées : Photoshop, Design Graphique</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal3')">&times;</span>
+            <img src="./images/Green and Black Football Sports Graphic Instagram Post.jpg" alt="PSG Stadium" class="modal-image">
+            <div class="modal-details">
+                <h3>Publication Instagram</h3>
+                <p>Création d'une publication Instagram pour promouvoir un événement du club. Le design moderne et dynamique attire l'attention des followers et encourage l'engagement.</p>
+                <p>Techniques utilisées : Design Social Media, Photoshop</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <input type="text" placeholder="Nom" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/ilias-belhaj-435526210/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 Ilias Belhaj. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

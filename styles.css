@@ -762,28 +762,34 @@ footer {
 
 .modal-content {
     position: relative;
-    margin: 5% auto;
+    margin: 2% auto;
     padding: 2rem;
     width: 90%;
-    max-width: 800px;
+    max-width: 1000px;
+    max-height: 90vh;
     background: rgba(18, 18, 18, 0.95);
     border-radius: 15px;
     border: 2px solid var(--primary-color);
     box-shadow: 0 0 50px rgba(37, 99, 235, 0.5);
     backdrop-filter: blur(10px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-image {
     width: 100%;
-    max-height: 400px;
-    object-fit: cover;
+    max-height: 70vh;
+    object-fit: contain;
     border-radius: 10px;
     margin-bottom: 1.5rem;
     border: 1px solid rgba(37, 99, 235, 0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .modal-details {
     color: var(--white);
+    flex-shrink: 0;
 }
 
 .modal-details h3 {
@@ -816,6 +822,7 @@ footer {
     justify-content: center;
     border-radius: 50%;
     border: 1px solid rgba(37, 99, 235, 0.3);
+    z-index: 10;
 }
 
 .close-modal:hover {
@@ -827,13 +834,14 @@ footer {
 /* Responsive pour les modales */
 @media (max-width: 768px) {
     .modal-content {
-        margin: 10% auto;
+        margin: 5% auto;
         padding: 1.5rem;
         width: 95%;
+        max-height: 85vh;
     }
     
     .modal-image {
-        max-height: 300px;
+        max-height: 60vh;
     }
     
     .modal-details h3 {
@@ -855,13 +863,14 @@ footer {
 
 @media (max-width: 480px) {
     .modal-content {
-        margin: 15% auto;
+        margin: 10% auto;
         padding: 1rem;
         width: 98%;
+        max-height: 80vh;
     }
     
     .modal-image {
-        max-height: 250px;
+        max-height: 50vh;
     }
     
     .modal-details h3 {
@@ -988,4 +997,4 @@ footer {
         font-size: 0.7rem;
         padding: 0.2rem 0.6rem;
     }
-} 
+}
